@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import AdviceCard from './components/advice-card/AdviceCard';
 import MainContainer from './components/main-container/MainContainer';
 import { GlobalStyles } from './styles/GlobalStyles';
+import axios from 'axios';
 
 const App = () => {
 	const [advice, setAdvice] = useState({ id: null, adviceText: '' });
@@ -9,6 +10,10 @@ const App = () => {
 	useEffect(() => {
 		fetchData(setAdvice);
 	}, []);
+
+	//! al recargar me aparece el mismo advice repetido
+	//! preguntar img div responsive
+	//! poner la conexión a al api en otro archivo??
 
 	return (
 		<MainContainer>

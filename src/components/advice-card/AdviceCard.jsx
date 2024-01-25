@@ -13,6 +13,8 @@ const AdviceCard = ({ number, text, handleClick }) => {
 			<StyledText>{text}</StyledText>
 			<StyledDivider></StyledDivider>
 			<StyledDivImg>
+
+				{/* poner con etiqueta picture  */}
 				<img
 					src='public/assets/images/icon-dice.svg'
 					alt=''
